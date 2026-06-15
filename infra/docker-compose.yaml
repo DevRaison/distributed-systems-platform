@@ -1,0 +1,6 @@
+# infra/docker-compose.yaml
+include:
+  - docker/docker-compose.yml
+  - docker/docker-compose.dev.yml
+  - docker/docker-compose.security.yml
+  - docker/docker-compose.observability.yml

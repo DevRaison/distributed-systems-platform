@@ -1,0 +1,39 @@
+# --- Python Cache & Compiled Files ---
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# --- Linting / Testing Tools ---
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# --- Virtual Environments (Local) ---
+**/.venv/
+**/venv/
+
+# --- Version Control ---
+.git/
+.github/
+
+# --- Build & Packaging ---
+**/dist/
+**/build/
+**/*.egg-info/
+
+# --- Security / Local Environment Variables ---
+.env
+.env.*
+
+# --- Logs ---
+**/*.log
+
+# --- PDM Package Manager ---
+**/.pdm-python
+**/.pdm-build/
+
+# --- IDEs & OS Metadata ---
+**/.vscode/
+**/.idea/
+**/.DS_Store

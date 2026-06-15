@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    # O padrão agora aponta para o serviço 'postgres' e banco 'platform' do seu Compose
+    url: jdbc:postgresql://${DB_HOST:postgres}:${DB_PORT:5432}/${DB_NAME:platform}
+    username: ${DB_USER:platform}
+    password: ${DB_PASS:platform}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

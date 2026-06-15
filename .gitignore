@@ -1,0 +1,376 @@
+# ==========================================================
+
+# SECURITY & SECRETS
+
+# ==========================================================
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+
+credentials.json
+service-account.json
+gcp-service-account.json
+
+secrets.yaml
+*.secret.yaml
+*.secret.yml
+
+*.apikey
+*.api-key
+
+openai.key
+anthropic.key
+
+# ==========================================================
+
+# CLOUD PROVIDERS
+
+# ==========================================================
+
+.aws/
+.azure/
+.gcp/
+.kube/
+
+# ==========================================================
+
+# DATABASES
+
+# ==========================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+infra/docker/postgres_data/
+infra/docker/redis_data/
+
+# ==========================================================
+
+# JAVA / SPRING BOOT
+
+# ==========================================================
+
+target/
+
+*.class
+*.jar
+*.war
+*.ear
+
+spring.log
+
+hs_err_pid*
+
+.mtj.tmp/
+
+out/
+
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# ==========================================================
+
+# PYTHON / FASTAPI
+
+# ==========================================================
+
+**pycache**/
+
+*.py[cod]
+*$py.class
+
+.Python
+
+.python-version
+
+venv/
+.venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.coverage
+htmlcov/
+
+pip-wheel-metadata/
+
+*.egg-info/
+.eggs/
+
+.ipynb_checkpoints/
+
+# Python packaging
+
+build/
+dist/
+
+# ==========================================================
+
+# NODE / NEXT.JS
+
+# ==========================================================
+
+node_modules/
+
+.next/
+.next/cache/
+
+out/
+
+.vercel/
+
+.turbo/
+
+coverage/
+.nyc_output/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js build traces
+
+*.nft.json
+
+# ==========================================================
+
+# STORYBOOK
+
+# ==========================================================
+
+storybook-static/
+
+# ==========================================================
+
+# PLAYWRIGHT
+
+# ==========================================================
+
+playwright-report/
+test-results/
+
+# ==========================================================
+
+# AIRFLOW
+
+# ==========================================================
+
+airflow.db
+
+airflow-webserver.pid
+airflow-scheduler.pid
+
+# ==========================================================
+
+# DBT
+
+# ==========================================================
+
+dbt_packages/
+
+# ==========================================================
+
+# SPARK
+
+# ==========================================================
+
+metastore_db/
+
+spark-warehouse/
+
+derby.log
+
+# ==========================================================
+
+# AI / MACHINE LEARNING
+
+# ==========================================================
+
+checkpoints/
+
+trained-models/
+model-artifacts/
+
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+wandb/
+
+mlruns/
+
+tensorboard/
+
+runs/
+
+# ==========================================================
+
+# TERRAFORM
+
+# ==========================================================
+
+.terraform/
+
+*.tfstate
+*.tfstate.*
+
+crash.log
+
+override.tf
+override.tf.json
+
+*_override.tf
+*_override.tf.json
+
+terraform.tfvars
+terraform.tfvars.json
+
+# Mantido versionado:
+
+# .terraform.lock.hcl
+
+# ==========================================================
+
+# KUBERNETES
+
+# ==========================================================
+
+kubeconfig
+
+*.kubeconfig
+
+sealed-secrets/
+
+# ==========================================================
+
+# SONARQUBE
+
+# ==========================================================
+
+.scannerwork/
+
+# ==========================================================
+
+# OPENTELEMETRY
+
+# ==========================================================
+
+otel-data/
+otel-collector-data/
+
+# ==========================================================
+
+# DOCKER
+
+# ==========================================================
+
+docker-compose.override.yml
+docker-compose.local.yml
+
+*.tar
+
+.docker/
+docker-cache/
+
+# ==========================================================
+
+# LOGS
+
+# ==========================================================
+
+logs/
+
+*.log
+*.log.*
+
+nohup.out
+
+# ==========================================================
+
+# IDES & EDITORS
+
+# ==========================================================
+
+# VS Code
+
+.vscode/
+.history/
+*.code-workspace
+
+# IntelliJ IDEA
+
+.idea/
+.idea_modules/
+
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+
+.classpath
+.project
+.settings/
+
+# ==========================================================
+
+# OPERATING SYSTEMS
+
+# ==========================================================
+
+.DS_Store
+
+Thumbs.db
+
+desktop.ini
+
+# ==========================================================
+
+# LINUX / WSL2
+
+# ==========================================================
+
+*.swp
+*.swo
+
+*.tmp
+*.cache
+
+*.pid
+*.seed
+
+# ==========================================================
+
+# USER CONFIGS
+
+# ==========================================================
+
+*.user
+*.userprefs
+
+# ==========================================================
+
+# MISCELLANEOUS
+
+# ==========================================================
+
+tmp/
+temp/
+
+.cache/

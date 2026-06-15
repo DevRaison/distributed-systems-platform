@@ -1,0 +1,34 @@
+[project]
+name = "python-services"
+version = "0.1.0"
+description = "Distributed Systems Platform - Python Services"
+authors = [
+    { name = "DevRaison", email = "noreply@example.com" }
+]
+requires-python = ">=3.12,<4.0"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+
+dependencies = [
+    "fastapi>=0.116.0",
+    "uvicorn[standard]>=0.35.0",
+    "pydantic>=2.11.0"
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+    "pytest-cov>=6.2.0",
+    "ruff>=0.12.0",
+    "mypy>=1.16.0"
+]
+
+[tool.pdm]
+distribution = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
